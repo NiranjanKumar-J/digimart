@@ -1,6 +1,3 @@
-// ========================================
-// DigiMart Cart
-// ========================================
 
 let cart =
     JSON.parse(localStorage.getItem("digimartCart")) || [];
@@ -24,11 +21,6 @@ const totalElement =
 const checkoutButton =
     document.getElementById("checkout-btn");
 
-
-// ========================================
-// UPDATE CART COUNT
-// ========================================
-
 function updateCartCount() {
 
     let count = 0;
@@ -43,11 +35,6 @@ function updateCartCount() {
 
 }
 
-
-// ========================================
-// SAVE CART
-// ========================================
-
 function saveCart() {
 
     localStorage.setItem(
@@ -56,11 +43,6 @@ function saveCart() {
     );
 
 }
-
-
-// ========================================
-// DISPLAY CART
-// ========================================
 
 function displayCart() {
 
@@ -179,11 +161,6 @@ function displayCart() {
 
 }
 
-
-// ========================================
-// QUANTITY BUTTONS
-// ========================================
-
 function setupQuantityButtons() {
 
     const plusButtons =
@@ -249,11 +226,6 @@ function setupQuantityButtons() {
 
 }
 
-
-// ========================================
-// REMOVE PRODUCT
-// ========================================
-
 function setupRemoveButtons() {
 
     const removeButtons =
@@ -302,11 +274,6 @@ function setupRemoveButtons() {
 
 }
 
-
-// ========================================
-// UPDATE SUMMARY
-// ========================================
-
 function updateSummary() {
 
     let subtotal = 0;
@@ -319,9 +286,6 @@ function updateSummary() {
             (product.quantity || 1);
 
     });
-
-
-    // Free delivery above ₹1,000
 
     let delivery = 0;
 
@@ -360,11 +324,6 @@ function updateSummary() {
     updateCartCount();
 
 }
-
-
-// ========================================
-// CHECKOUT
-// ========================================
 
 checkoutButton.addEventListener(
     "click",
@@ -406,11 +365,6 @@ checkoutButton.addEventListener(
 
     }
 );
-
-
-// ========================================
-// INITIALIZE
-// ========================================
 
 displayCart();
 

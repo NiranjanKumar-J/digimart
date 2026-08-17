@@ -17,9 +17,6 @@ body{
     overflow-x:hidden;
 }
 
-/* =========================
-   Navbar
-========================= */
 
 header{
     position:sticky;
@@ -122,9 +119,6 @@ header{
     align-items:center;
 }
 
-/* =========================
-   Hero
-========================= */
 
 .hero{
     height:520px;
@@ -195,9 +189,6 @@ header{
     }
 }
 
-/* =========================
-   Categories
-========================= */
 
 .categories{
     padding:80px 8%;
@@ -250,9 +241,6 @@ header{
     color:#6C4DF6;
 }
 
-/* =========================
-   Featured Products
-========================= */
 
 .featured{
     padding:80px 8%;
@@ -285,14 +273,14 @@ header{
     transform-style:preserve-3d;
 }
 
-/* ---------- Rotate Effect ---------- */
+
 
 .product-card:hover{
     transform:rotate(5deg) scale(1.05);
     box-shadow:0 25px 45px #6C4DF6;
 }
 
-/* ----------------------------------- */
+
 
 .badge{
     position:absolute;
@@ -380,7 +368,7 @@ header{
     color:#fff;
 }
 
-/* Shine Effect */
+
 
 .product-card::before{
     content:"";
@@ -398,9 +386,6 @@ header{
     left:160%;
 }
 
-/* =========================
-   Footer
-========================= */
 
 footer{
     background:#1f1f2e;
@@ -458,9 +443,6 @@ footer{
     margin-top:25px;
 }
 
-/* =========================
-   Scrollbar
-========================= */
 
 ::-webkit-scrollbar{
     width:10px;
@@ -479,9 +461,6 @@ footer{
     background:#4F46E5;
 }
 
-/* =========================
-   Fade Animation
-========================= */
 
 .categories,
 .featured,
@@ -503,9 +482,6 @@ footer{
 
 }
 
-/* =========================
-   Floating Image
-========================= */
 
 .product-card img{
     animation:floatImage 3s ease-in-out infinite;
@@ -527,9 +503,6 @@ footer{
 
 }
 
-/* =========================
-   Glow Effect
-========================= */
 
 .shop-btn:hover,
 .cart-btn:hover{
@@ -540,9 +513,6 @@ footer{
 
 }
 
-/* =========================
-   Responsive
-========================= */
 
 @media(max-width:992px){
 

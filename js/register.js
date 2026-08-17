@@ -1,6 +1,3 @@
-// ========================================
-// DigiMart Registration
-// ========================================
 
 const form = document.querySelector("form");
 
@@ -12,17 +9,9 @@ const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm");
 const terms = document.getElementById("terms");
 
-
-// ========================================
-// REGISTER
-// ========================================
-
 form.addEventListener("submit", function (event) {
 
     event.preventDefault();
-
-
-    // Full name validation
     if (fullname.value.trim().length < 3) {
 
         alert("Please enter a valid full name.");
@@ -32,9 +21,6 @@ form.addEventListener("submit", function (event) {
         return;
 
     }
-
-
-    // Email validation
     const emailPattern =
         /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -47,9 +33,6 @@ form.addEventListener("submit", function (event) {
         return;
 
     }
-
-
-    // Mobile validation
     const mobilePattern =
         /^[0-9]{10}$/;
 
@@ -62,9 +45,6 @@ form.addEventListener("submit", function (event) {
         return;
 
     }
-
-
-    // Password validation
     if (password.value.length < 6) {
 
         alert(
@@ -76,9 +56,6 @@ form.addEventListener("submit", function (event) {
         return;
 
     }
-
-
-    // Confirm password
     if (password.value !== confirmPassword.value) {
 
         alert("Passwords do not match.");
@@ -88,9 +65,6 @@ form.addEventListener("submit", function (event) {
         return;
 
     }
-
-
-    // Terms
     if (!terms.checked) {
 
         alert(
@@ -100,11 +74,6 @@ form.addEventListener("submit", function (event) {
         return;
 
     }
-
-
-    // ========================================
-    // CREATE USER
-    // ========================================
 
     const user = {
 
@@ -124,16 +93,10 @@ form.addEventListener("submit", function (event) {
             password.value
 
     };
-
-
-    // Save user
     localStorage.setItem(
         "digimartUser",
         JSON.stringify(user)
     );
-
-
-    // Login status
     localStorage.setItem(
         "digimartLoggedIn",
         "false"
@@ -143,9 +106,6 @@ form.addEventListener("submit", function (event) {
     alert(
         "Registration successful!\nPlease login to continue."
     );
-
-
-    // Go to login
     window.location.href =
         "login.html";
 

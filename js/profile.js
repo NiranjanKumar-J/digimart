@@ -1,17 +1,6 @@
-// ========================================
-// DigiMart Profile
-// ========================================
-
-
-// Get login status
 
 const loggedIn =
     localStorage.getItem("digimartLoggedIn");
-
-
-// ========================================
-// CHECK LOGIN
-// ========================================
 
 if (loggedIn !== "true") {
 
@@ -24,18 +13,10 @@ if (loggedIn !== "true") {
 
 }
 
-
-// ========================================
-// GET USER
-// ========================================
-
 const user =
     JSON.parse(
         localStorage.getItem("digimartUser")
     );
-
-
-// If user data doesn't exist
 
 if (!user) {
 
@@ -48,11 +29,6 @@ if (!user) {
         "login.html";
 
 }
-
-
-// ========================================
-// DISPLAY USER
-// ========================================
 
 document.getElementById("profileName")
     .textContent =
@@ -77,11 +53,6 @@ document.getElementById("mobile")
 document.getElementById("dob")
     .textContent =
     user.dob;
-
-
-// ========================================
-// LOGOUT
-// ========================================
 
 document.getElementById("logoutBtn")
     .addEventListener(

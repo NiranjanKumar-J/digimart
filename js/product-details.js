@@ -1,9 +1,3 @@
-// ========================================
-// DigiMart Product Details
-// ========================================
-
-
-// Product data
 
 const products = {
 
@@ -81,21 +75,11 @@ const products = {
 
 };
 
-
-// ========================================
-// GET PRODUCT FROM URL
-// ========================================
-
 const params =
     new URLSearchParams(window.location.search);
 
 const productName =
     params.get("product");
-
-
-// ========================================
-// PAGE ELEMENTS
-// ========================================
 
 const productImage =
     document.getElementById("productImage");
@@ -127,11 +111,6 @@ const addCartBtn =
 const buyBtn =
     document.getElementById("buyBtn");
 
-
-// ========================================
-// QUANTITY
-// ========================================
-
 let quantity = 1;
 
 
@@ -159,11 +138,6 @@ document.getElementById("minusBtn")
             quantity;
 
     });
-
-
-// ========================================
-// LOAD PRODUCT
-// ========================================
 
 const product =
     products[productName];
@@ -207,20 +181,10 @@ else {
 
 }
 
-
-// ========================================
-// CART
-// ========================================
-
 let cart =
     JSON.parse(
         localStorage.getItem("digimartCart")
     ) || [];
-
-
-// ========================================
-// UPDATE CART COUNT
-// ========================================
 
 function updateCartCount() {
 
@@ -238,11 +202,6 @@ function updateCartCount() {
 }
 
 updateCartCount();
-
-
-// ========================================
-// ADD TO CART
-// ========================================
 
 addCartBtn.addEventListener(
     "click",
@@ -274,9 +233,6 @@ addCartBtn.addEventListener(
 
         };
 
-
-        // Check if product already exists
-
         const existing =
             cart.find(
                 item =>
@@ -297,9 +253,6 @@ addCartBtn.addEventListener(
 
         }
 
-
-        // Save
-
         localStorage.setItem(
             "digimartCart",
             JSON.stringify(cart)
@@ -316,11 +269,6 @@ addCartBtn.addEventListener(
 
     }
 );
-
-
-// ========================================
-// BUY NOW
-// ========================================
 
 buyBtn.addEventListener(
     "click",

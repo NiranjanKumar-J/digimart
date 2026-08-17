@@ -1,12 +1,6 @@
-// ========================================
-// DigiMart Checkout
-// ========================================
 
 let cart =
     JSON.parse(localStorage.getItem("digimartCart")) || [];
-
-
-// Elements
 
 const checkoutItems =
     document.getElementById("checkout-items");
@@ -22,11 +16,6 @@ const totalElement =
 
 const checkoutForm =
     document.getElementById("checkoutForm");
-
-
-// ========================================
-// LOAD ORDER SUMMARY
-// ========================================
 
 function loadCheckout() {
 
@@ -105,9 +94,6 @@ function loadCheckout() {
 
     });
 
-
-    // Delivery
-
     let delivery = 0;
 
 
@@ -143,19 +129,11 @@ function loadCheckout() {
 
 }
 
-
-// ========================================
-// FORM VALIDATION
-// ========================================
-
 checkoutForm.addEventListener(
     "submit",
     function (event) {
 
         event.preventDefault();
-
-
-        // Empty cart check
 
         if (cart.length === 0) {
 
@@ -200,9 +178,6 @@ checkoutForm.addEventListener(
                 .value
                 .trim();
 
-
-        // Mobile validation
-
         if (!/^[0-9]{10}$/.test(mobile)) {
 
             alert(
@@ -213,9 +188,6 @@ checkoutForm.addEventListener(
 
         }
 
-
-        // PIN validation
-
         if (!/^[0-9]{6}$/.test(pincode)) {
 
             alert(
@@ -225,9 +197,6 @@ checkoutForm.addEventListener(
             return;
 
         }
-
-
-        // Payment method
 
         const payment =
             document.querySelector(
@@ -258,9 +227,6 @@ checkoutForm.addEventListener(
                 "Credit / Debit Card";
 
         }
-
-
-        // Save order
 
         const order = {
 
@@ -299,32 +265,18 @@ checkoutForm.addEventListener(
             JSON.stringify(order)
         );
 
-
-        // Clear cart
-
         localStorage.removeItem(
             "digimartCart"
         );
 
-
-        // Success
-
         alert(
             "Order placed successfully!"
         );
-
-
-        // Go to confirmation
 
         window.location.href =
             "order-success.html";
 
     }
 );
-
-
-// ========================================
-// INITIALIZE
-// ========================================
 
 loadCheckout();

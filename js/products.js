@@ -1,6 +1,3 @@
-// ========================================
-// DigiMart Products Page
-// ========================================
 
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
@@ -8,18 +5,8 @@ const sortPrice = document.getElementById("sortPrice");
 const productGrid = document.querySelector(".product-grid");
 const cartCount = document.getElementById("cart-count");
 
-
-// ========================================
-// CART
-// ========================================
-
 let cart =
     JSON.parse(localStorage.getItem("digimartCart")) || [];
-
-
-// ========================================
-// UPDATE CART COUNT
-// ========================================
 
 function updateCartCount() {
 
@@ -37,11 +24,6 @@ function updateCartCount() {
 
 }
 
-
-// ========================================
-// GET PRODUCTS
-// ========================================
-
 function getProducts() {
 
     return Array.from(
@@ -49,11 +31,6 @@ function getProducts() {
     );
 
 }
-
-
-// ========================================
-// ADD TO CART
-// ========================================
 
 function addToCart(card) {
 
@@ -107,11 +84,6 @@ function addToCart(card) {
 
 }
 
-
-// ========================================
-// CART BUTTONS
-// ========================================
-
 function setupCartButtons() {
 
     const buttons =
@@ -135,11 +107,6 @@ function setupCartButtons() {
     });
 
 }
-
-
-// ========================================
-// VIEW DETAILS
-// ========================================
 
 function setupViewButtons() {
 
@@ -173,11 +140,6 @@ function setupViewButtons() {
     });
 
 }
-
-
-// ========================================
-// FILTER PRODUCTS
-// ========================================
 
 function filterProducts() {
 
@@ -240,11 +202,6 @@ function filterProducts() {
 
 }
 
-
-// ========================================
-// HOME URL PARAMETERS
-// ========================================
-
 function loadURLFilters() {
 
     const params =
@@ -260,18 +217,12 @@ function loadURLFilters() {
     const category =
         params.get("category");
 
-
-    // Search from Home
-
     if (search) {
 
         searchInput.value =
             search;
 
     }
-
-
-    // Category from Home
 
     if (category) {
 
@@ -290,37 +241,19 @@ function loadURLFilters() {
 
     }
 
-
-    // Apply filters
-
     filterProducts();
 
 }
-
-
-// ========================================
-// SEARCH
-// ========================================
 
 searchInput.addEventListener(
     "input",
     filterProducts
 );
 
-
-// ========================================
-// CATEGORY
-// ========================================
-
 categoryFilter.addEventListener(
     "change",
     filterProducts
 );
-
-
-// ========================================
-// SORT
-// ========================================
 
 sortPrice.addEventListener(
     "change",
@@ -372,11 +305,6 @@ sortPrice.addEventListener(
 
     }
 );
-
-
-// ========================================
-// INITIALIZE
-// ========================================
 
 setupCartButtons();
 

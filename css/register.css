@@ -1,4 +1,4 @@
-/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -19,7 +19,7 @@ body{
     height:100vh;
 }
 
-/* Left Section */
+
 
 .left{
     width:50%;
@@ -50,7 +50,7 @@ body{
     line-height:1.5;
 }
 
-/* Right Section */
+
 
 .right{
     width:50%;
@@ -80,7 +80,7 @@ body{
     margin-bottom:15px;
 }
 
-/* Form */
+
 
 .form-group{
     margin-bottom:10px;
@@ -112,7 +112,7 @@ body{
     box-shadow:0 0 5px rgba(108,77,246,.25);
 }
 
-/* Gender */
+
 
 .gender{
     display:flex;
@@ -128,7 +128,7 @@ body{
     font-weight:500;
 }
 
-/* Checkbox */
+
 
 .checkbox{
     display:flex;
@@ -147,7 +147,7 @@ body{
     color:#555;
 }
 
-/* Button */
+
 
 button{
     width:100%;
@@ -170,7 +170,7 @@ button i{
     margin-right:8px;
 }
 
-/* Login */
+
 
 .login-link{
     text-align:center;
@@ -188,7 +188,7 @@ button i{
     text-decoration:underline;
 }
 
-/* Responsive */
+
 
 @media(max-width:900px){
 

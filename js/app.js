@@ -1,15 +1,7 @@
-// ========================================
-// DigiMart Home Page
-// ========================================
 
 const searchBox = document.querySelector(".search-box input");
 const searchButton = document.querySelector(".search-box button");
 const cartCount = document.getElementById("cart-count");
-
-
-// ========================================
-// CART COUNT
-// ========================================
 
 function updateCartCount() {
 
@@ -31,11 +23,6 @@ function updateCartCount() {
 }
 
 updateCartCount();
-
-
-// ========================================
-// HOME SEARCH
-// ========================================
 
 function searchProducts() {
 
@@ -59,9 +46,6 @@ function searchProducts() {
 
 }
 
-
-// Search button
-
 if (searchButton) {
 
     searchButton.addEventListener(
@@ -70,9 +54,6 @@ if (searchButton) {
     );
 
 }
-
-
-// Press Enter
 
 if (searchBox) {
 
@@ -90,11 +71,6 @@ if (searchBox) {
     );
 
 }
-
-
-// ========================================
-// SHOP NOW
-// ========================================
 
 const shopButton =
     document.querySelector(".shop-btn");
@@ -115,11 +91,6 @@ if (shopButton) {
     );
 
 }
-
-
-// ========================================
-// CATEGORY CLICK
-// ========================================
 
 const categoryCards =
     document.querySelectorAll(
@@ -185,11 +156,6 @@ categoryCards.forEach(card => {
 
 });
 
-
-// ========================================
-// FEATURED PRODUCTS
-// ========================================
-
 const featuredCards =
     document.querySelectorAll(
         ".featured .product-card"
@@ -197,8 +163,6 @@ const featuredCards =
 
 
 featuredCards.forEach(card => {
-
-    // View Details
 
     const viewButton =
         card.querySelector(".view-btn");
@@ -224,9 +188,6 @@ featuredCards.forEach(card => {
         );
 
     }
-
-
-    // Add to Cart
 
     const cartButton =
         card.querySelector(".cart-btn");

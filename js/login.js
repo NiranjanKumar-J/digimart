@@ -1,6 +1,3 @@
-// ========================================
-// DigiMart Login
-// ========================================
 
 const loginForm =
     document.querySelector("form");
@@ -14,26 +11,15 @@ const password =
 const remember =
     document.getElementById("remember");
 
-
-// ========================================
-// LOGIN
-// ========================================
-
 loginForm.addEventListener(
     "submit",
     function (event) {
 
         event.preventDefault();
-
-
-        // Get registered user
         const savedUser =
             JSON.parse(
                 localStorage.getItem("digimartUser")
             );
-
-
-        // No account
         if (!savedUser) {
 
             alert(
@@ -50,9 +36,6 @@ loginForm.addEventListener(
 
         const enteredPassword =
             password.value;
-
-
-        // Check login
         if (
             enteredEmail !== savedUser.email ||
             enteredPassword !== savedUser.password
@@ -66,18 +49,10 @@ loginForm.addEventListener(
 
         }
 
-
-        // ========================================
-        // LOGIN SUCCESS
-        // ========================================
-
         localStorage.setItem(
             "digimartLoggedIn",
             "true"
         );
-
-
-        // Remember Me
         if (remember.checked) {
 
             localStorage.setItem(

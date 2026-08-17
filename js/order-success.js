@@ -1,6 +1,3 @@
-// ========================================
-// DigiMart Order Success
-// ========================================
 
 const order =
     JSON.parse(
@@ -17,40 +14,25 @@ if (!order) {
 
 }
 
-
-// Order ID
-
 document.getElementById(
     "order-id"
 ).textContent =
     order.orderId;
-
-
-// Customer
 
 document.getElementById(
     "customer-name"
 ).textContent =
     order.customer.name;
 
-
-// Payment
-
 document.getElementById(
     "payment-method"
 ).textContent =
     order.payment;
 
-
-// Date
-
 document.getElementById(
     "order-date"
 ).textContent =
     order.date;
-
-
-// Calculate total
 
 let subtotal = 0;
 

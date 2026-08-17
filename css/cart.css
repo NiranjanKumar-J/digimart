@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* ========================================
-   DIGIMART - CART PAGE
-   Purple Premium Theme
-======================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -23,9 +18,6 @@ body {
 }
 
 
-/* ========================================
-   NAVBAR
-======================================== */
 
 header {
     position: sticky;
@@ -49,7 +41,6 @@ header {
 }
 
 
-/* LOGO */
 
 .logo {
     display: flex;
@@ -79,7 +70,6 @@ header {
 }
 
 
-/* NAV LINKS */
 
 .nav-links {
     display: flex;
@@ -103,7 +93,6 @@ header {
 }
 
 
-/* NAV ICONS */
 
 .nav-icons {
     display: flex;
@@ -129,8 +118,6 @@ header {
     transform: translateY(-4px);
 }
 
-
-/* CART COUNT */
 
 #cart-count {
     position: absolute;
@@ -158,9 +145,6 @@ header {
 }
 
 
-/* ========================================
-   PAGE TITLE
-======================================== */
 
 .page-title {
     text-align: center;
@@ -209,9 +193,6 @@ header {
 }
 
 
-/* ========================================
-   CART SECTION
-======================================== */
 
 .cart-section {
     padding: 40px 8% 80px;
@@ -233,9 +214,6 @@ header {
 }
 
 
-/* ========================================
-   CART PRODUCTS
-======================================== */
 
 .cart-products {
     background: #fff;
@@ -259,9 +237,6 @@ header {
 }
 
 
-/* ========================================
-   CART ITEM
-======================================== */
 
 .cart-item {
     display: flex;
@@ -291,7 +266,6 @@ header {
 }
 
 
-/* PRODUCT IMAGE */
 
 .cart-item img {
     width: 105px;
@@ -321,9 +295,6 @@ header {
 }
 
 
-/* ========================================
-   PRODUCT INFO
-======================================== */
 
 .item-info {
     flex: 1;
@@ -352,9 +323,6 @@ header {
 }
 
 
-/* ========================================
-   QUANTITY
-======================================== */
 
 .quantity {
     display: flex;
@@ -403,10 +371,6 @@ header {
 }
 
 
-/* ========================================
-   ITEM TOTAL
-======================================== */
-
 .item-total {
     min-width: 100px;
 
@@ -418,9 +382,6 @@ header {
 }
 
 
-/* ========================================
-   REMOVE BUTTON
-======================================== */
 
 .remove-btn {
     border: none;
@@ -450,9 +411,6 @@ header {
 }
 
 
-/* ========================================
-   ORDER SUMMARY
-======================================== */
 
 .cart-summary {
     background: #fff;
@@ -480,7 +438,6 @@ header {
 }
 
 
-/* SUMMARY ROW */
 
 .summary-row {
     display: flex;
@@ -499,7 +456,6 @@ header {
 }
 
 
-/* DIVIDER */
 
 .cart-summary hr {
     border: none;
@@ -511,7 +467,6 @@ header {
 }
 
 
-/* TOTAL */
 
 .summary-total {
     display: flex;
@@ -530,9 +485,6 @@ header {
 }
 
 
-/* ========================================
-   CHECKOUT BUTTON
-======================================== */
 
 #checkout-btn {
     width: 100%;
@@ -568,9 +520,6 @@ header {
 }
 
 
-/* ========================================
-   CONTINUE SHOPPING
-======================================== */
 
 .continue-btn {
     display: block;
@@ -605,9 +554,6 @@ header {
 }
 
 
-/* ========================================
-   EMPTY CART
-======================================== */
 
 .empty-cart {
     text-align: center;
@@ -670,9 +616,6 @@ header {
 }
 
 
-/* ========================================
-   FOOTER
-======================================== */
 
 footer {
     background: #1f1f2e;
@@ -705,7 +648,6 @@ footer {
 }
 
 
-/* SOCIAL ICONS */
 
 .social-icons {
     display: flex;
@@ -761,9 +703,6 @@ footer {
 }
 
 
-/* ========================================
-   SCROLLBAR
-======================================== */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -784,9 +723,6 @@ footer {
 }
 
 
-/* ========================================
-   ANIMATIONS
-======================================== */
 
 @keyframes fadeSection {
 
@@ -847,9 +783,6 @@ footer {
 }
 
 
-/* ========================================
-   RESPONSIVE
-======================================== */
 
 @media (max-width: 992px) {
 

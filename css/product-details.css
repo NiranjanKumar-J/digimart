@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* ========================================
-   DIGIMART - PRODUCT DETAILS
-   Premium Purple / Violet Theme
-======================================== */
 
 * {
     margin: 0;
@@ -23,9 +19,6 @@ body {
 }
 
 
-/* ========================================
-   HEADER - GLASSMORPHISM NAVBAR
-======================================== */
 
 header {
     position: sticky;
@@ -52,7 +45,7 @@ header {
 }
 
 
-/* LOGO */
+
 
 .logo {
     display: flex;
@@ -86,7 +79,7 @@ header {
 }
 
 
-/* NAV LINKS */
+
 
 .nav-links {
     display: flex;
@@ -115,7 +108,7 @@ header {
 }
 
 
-/* CART */
+
 
 .cart-link {
     position: relative;
@@ -151,9 +144,6 @@ header {
 }
 
 
-/* ========================================
-   PRODUCT DETAILS SECTION
-======================================== */
 
 main {
     min-height: 75vh;
@@ -198,9 +188,6 @@ main {
 }
 
 
-/* ========================================
-   PRODUCT IMAGE
-======================================== */
 
 .product-image {
 
@@ -231,7 +218,7 @@ main {
 }
 
 
-/* Purple Glow */
+
 
 .product-image::before {
 
@@ -251,7 +238,7 @@ main {
 }
 
 
-/* Shine */
+
 
 .product-image::after {
 
@@ -281,7 +268,7 @@ main {
 }
 
 
-/* IMAGE */
+
 
 .product-image img {
 
@@ -321,9 +308,6 @@ main {
 }
 
 
-/* ========================================
-   PRODUCT INFO
-======================================== */
 
 .product-info {
 
@@ -334,7 +318,7 @@ main {
 }
 
 
-/* BRAND */
+
 
 .brand {
 
@@ -348,7 +332,7 @@ main {
 }
 
 
-/* TITLE */
+
 
 .product-info h1 {
 
@@ -371,7 +355,7 @@ main {
 }
 
 
-/* RATING */
+
 
 .rating {
 
@@ -385,7 +369,7 @@ main {
 }
 
 
-/* PRICE */
+
 
 .product-info h2 {
 
@@ -401,7 +385,7 @@ main {
 }
 
 
-/* DESCRIPTION */
+
 
 .description {
 
@@ -415,9 +399,6 @@ main {
 }
 
 
-/* ========================================
-   QUANTITY
-======================================== */
 
 .quantity-box {
 
@@ -483,9 +464,6 @@ main {
 }
 
 
-/* ========================================
-   BUTTONS
-======================================== */
 
 .buttons {
 
@@ -514,7 +492,7 @@ main {
 }
 
 
-/* ADD CART */
+
 
 #addCartBtn {
 
@@ -540,7 +518,7 @@ main {
 }
 
 
-/* BUY NOW */
+
 
 #buyBtn {
 
@@ -569,9 +547,6 @@ main {
 }
 
 
-/* ========================================
-   BACK BUTTON
-======================================== */
 
 .back-btn {
 
@@ -594,10 +569,6 @@ main {
     display: inline-block;
 }
 
-
-/* ========================================
-   FOOTER
-======================================== */
 
 footer {
 
@@ -652,9 +623,6 @@ footer p {
 }
 
 
-/* ========================================
-   ANIMATIONS
-======================================== */
 
 @keyframes floatProduct {
 
@@ -703,10 +671,6 @@ footer p {
 }
 
 
-/* ========================================
-   SCROLLBAR
-======================================== */
-
 ::-webkit-scrollbar {
 
     width: 10px;
@@ -730,9 +694,6 @@ footer p {
 }
 
 
-/* ========================================
-   RESPONSIVE
-======================================== */
 
 @media (max-width: 992px) {
 
