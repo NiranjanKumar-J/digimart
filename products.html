@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiMart | Products</title>
+
+    <link rel="stylesheet" href="css/products.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-bolt"></i>
+                <span>DigiMart</span>
+            </div>
+
+            <div class="search-box">
+
+                <input type="text" id="searchInput" placeholder="Search Electronics...">
+
+                <button>
+                    <i class="fa-solid fa-search"></i>
+                </button>
+
+            </div>
+
+            <div class="nav-icons">
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="cart.html" class="cart-icon">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span id="cart-count">0</span>
+
+                </a>
+
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="page-title">
+
+        <h1>All Electronics</h1>
+
+        <p>Choose from our premium collection.</p>
+
+    </section>
+
+
+    <section class="filter-section">
+
+        <div class="left">
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option value="mobile">Mobiles</option>
+
+                <option value="laptop">Laptops</option>
+
+                <option value="watch">Smart Watches</option>
+
+                <option value="audio">Headphones</option>
+
+                <option value="gaming">Gaming</option>
+
+            </select>
+
+        </div>
+
+        <div class="right">
+
+            <select id="sortPrice">
+
+                <option value="default">Sort By</option>
+
+                <option value="low-high">Price : Low to High</option>
+
+                <option value="high-low">Price : High to Low</option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <section class="products">
+
+        <div class="product-grid">
+
+
+            <div class="product-card" data-category="mobile" data-price="79999">
+
+                <span class="badge">-15%</span>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIiJY_UT9xuf47rk_37ybpK9ygpq-AJztmW01KhEorzg&s=10">
+
+                <h3>iPhone 16</h3>
+
+                <p>Apple</p>
+
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <h4>₹79,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card" data-category="laptop" data-price="109999">
+
+                <span class="badge">New</span>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6jkZ88FQT8PMjH_3vaoOHRY_29_WlzRQNQFFQ7_YSQ&s=10">
+
+                <h3>MacBook Air M4</h3>
+
+                <p>Apple</p>
+
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <h4>₹1,09,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card" data-category="audio" data-price="24999">
+
+                <span class="badge">Hot</span>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAQBF4AAXNBmZjIEGR-dC9cba3NsFOwIXc2roy9pbHpg&s=10">
+
+                <h3>Sony WH-1000XM5</h3>
+
+                <p>Sony</p>
+
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <h4>₹24,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card" data-category="watch" data-price="29999">
+
+                <span class="badge">Sale</span>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGSNzKm_4H-hNAksApCOzbzJA7kmsZN6-cRx7C2JpmRg&s=10">
+
+                <h3>Galaxy Watch 8</h3>
+
+                <p>Samsung</p>
+
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <h4>₹29,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card" data-category="mobile" data-price="44999">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSsenRL_buhtyQz4l_Z4DoF5w6eGRLJ--Vbm90SerAwQ&s=10">
+
+                <h3>OnePlus 13</h3>
+
+                <p>OnePlus</p>
+
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <h4>₹44,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card" data-category="mobile" data-price="32999">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMAAiGcMVgMtvH0G4GOrDiJjoLyFupWffdEScJ6gSfxw&s=10">
+
+                <h3>iQOO Neo</h3>
+
+                <p>iQOO</p>
+
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <h4>₹32,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card" data-category="laptop" data-price="75999">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrr7Nehzym520vBciqnIZamS5sw3oJVTCpb2ciwKGDw&s=10">
+
+                <h3>ASUS ROG</h3>
+
+                <p>ASUS</p>
+
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <h4>₹75,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="gaming" data-price="54999">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqkqioHsNc-MjsrRDV5VAVyTbhMTlQlRRH0_lhVc-Jw&s=10">
+
+                <h3>PlayStation 5</h3>
+
+                <p>Sony</p>
+
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <h4>₹54,999</h4>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="view-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>DigiMart</h2>
+
+            <p>Your One Stop Destination for Premium Electronics.</p>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+            <p class="copy">
+                © 2026 DigiMart. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>

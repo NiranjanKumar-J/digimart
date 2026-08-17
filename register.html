@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiMart | Register</title>
+
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="overlay">
+            <h1><i class="fa-solid fa-bolt"></i> DigiMart</h1>
+            <h2>Create Your Account</h2>
+            <p>Join DigiMart and explore premium electronics at the best prices.</p>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="register-box">
+
+            <h2>Registration Form</h2>
+
+            <form action="login.html" method="post">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"
+                        placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile"
+                        maxlength="10" placeholder="Enter mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Create password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" name="confirm"
+                        placeholder="Confirm password" required>
+                </div>
+
+                <div class="form-group checkbox">
+
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to the Terms & Conditions.
+                    </label>
+
+                </div>
+
+                <button type="submit">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login Here</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+</html>
